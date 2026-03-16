@@ -1,6 +1,6 @@
 using System;
 // EXCEEDING REQUIREMENTS:
-// 1. I want a greeting and exit messages to make more personal, inviting to think or ponder before writing or ponder.
+// 1 I wanted a greeting and exit messages to make more personal, inviting to think or ponder before writing or ponder.
 // 2.Saved other information in the journal entry:The user is now prompted to enter their 'Mood' for the day as a personal register.
 class Program
 {
