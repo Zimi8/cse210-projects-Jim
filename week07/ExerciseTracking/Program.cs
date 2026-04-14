@@ -5,21 +5,20 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<Animal> natureReserve = new List<Animal>();
+        List<Activity> activities = new List<Activity>();
 
-        natureReserve.Add(new Yaguarete());
-        natureReserve.Add(new Carpincho());
-        natureReserve.Add(new Urutau());
-        natureReserve.Add(new Coati());
+        Running running = new Running("03 Nov 2022", 30, 4.8);
+        activities.Add(running);
 
-        Console.WriteLine("Argentinian Wildlife Sounds:");
-        Console.WriteLine("----------------------------");
+        Cycling cycling = new Cycling("04 Nov 2022", 45, 20.0);
+        activities.Add(cycling);
 
-        foreach (Animal animal in natureReserve)
+        Swimming swimming = new Swimming("05 Nov 2022", 20, 30);
+        activities.Add(swimming);
+
+        foreach (Activity activity in activities)
         {
-            Console.Write($"{animal.GetName()} says: ");
-        
-            animal.MakeSound();
+            Console.WriteLine(activity.GetSummary());
         }
     }
 }
