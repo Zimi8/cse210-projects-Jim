@@ -1,0 +1,17 @@
+public abstract class Goal
+{
+   //every child element should have this method but they need to have the code write there
+    public abstract bool IsComplete(); 
+}
+
+
+
+public class SimpleGoal : Goal
+{
+    private bool _isComplete;
+
+    public override bool IsComplete()
+    {
+        return _isComplete;
+    }
+}
